@@ -760,21 +760,21 @@
       - patch
       - rule_1.5.4
 
-- name: "SCORED | 1.6.1.1 | PATCH | Ensure SELinux is not disabled in bootloader configuration"
-  replace:
-      dest: /etc/default/grub
-      regexp: '(selinux|enforcing)\s*=\s*0\s*'
-      follow: yes
-  register: selinux_grub_patch
-  ignore_errors: yes
-  notify: generate new grub config
-  when:
-      - centos7cis_rule_1_6_1_1
-  tags:
-      - level2
-      - scored
-      - patch
-      - rule_1.6.1.1
+#- name: "SCORED | 1.6.1.1 | PATCH | Ensure SELinux is not disabled in bootloader configuration"
+ # replace:
+  #    dest: /etc/default/grub
+   #   regexp: '(selinux|enforcing)\s*=\s*0\s*'
+    #  follow: yes
+  #register: selinux_grub_patch
+  #ignore_errors: yes
+  #notify: generate new grub config
+  #when:
+  #    - centos7cis_rule_1_6_1_1
+  #tags:
+   #   - level2
+   #   - scored
+   #   - patch
+   #   - rule_1.6.1.1
 
 - name: "SCORED | 1.6.1.2 | PATCH | Ensure the SELinux state is enforcing"
   selinux:
