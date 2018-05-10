@@ -449,15 +449,15 @@
       - patch
       - rule_1.1.22
 
-- name: "NOTSCORED | 1.2.1 | PATCH | Ensure package manager repositories are configured"
-  command: yum repolist
-  when:
-      - centos7cis_rule_1_2_1
-  tags:
-      - level1
-      - notscored
-      - patch
-      - rule_1.2.1
+#- name: "NOTSCORED | 1.2.1 | PATCH | Ensure package manager repositories are configured"
+#  command: yum repolist
+#  when:
+#      - centos7cis_rule_1_2_1
+#  tags:
+#     - level1
+#      - notscored
+#      - patch
+#      - rule_1.2.1
 
 - name: "NOTSCORED | 1.2.2 | PATCH | Ensure GPG keys are configured"
   shell: rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\n'
