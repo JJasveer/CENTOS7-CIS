@@ -25,8 +25,7 @@ centos7cis_rule_1_1_1_5: true
 centos7cis_rule_1_1_1_6: true
 centos7cis_rule_1_1_1_7: true
 centos7cis_rule_1_1_1_8: true
-#centos7cis_rule_1_1_2: true
-centos7cis_rule_1_1_2: false
+centos7cis_rule_1_1_2: true
 centos7cis_rule_1_1_3: true
 centos7cis_rule_1_1_4: true
 centos7cis_rule_1_1_5: true
